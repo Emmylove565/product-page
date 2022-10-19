@@ -12,7 +12,8 @@ html {
 
 body {
   margin: 0;
-  /* include your font family and default line-height */
+  line-height: 21pt;
+  background-color: #FFFAF4;
 }
 
 img {
@@ -28,6 +29,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #B69276;
+}
+
+nav {
+  background-color: #B69276;
 }
 
 header nav ul {
