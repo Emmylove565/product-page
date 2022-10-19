@@ -54,6 +54,12 @@ header nav ul li a:focus {
   text-decoration: underline;
 }
 
+.main-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.75rem;
+}
+
 footer {
   text-align: center;
 }
