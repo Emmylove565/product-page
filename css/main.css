@@ -121,6 +121,7 @@ h2 {
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  line-height: 1.5rem;
 }
 
 .price {
@@ -134,7 +135,7 @@ p {
 .main-detail {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 0.75rem;
+  gap: 0.6rem;
 }
 
 hr {
@@ -153,6 +154,39 @@ h3 {
   margin-bottom: 0px;
 }
 
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #6B370E;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.scientific-info p {
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+  color: #5C8212;
+  margin-top: 2px;
+  margin-bottom: 20px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.details-p {
+  margin: 1rem 0rem 20px 0rem;
+}
+
+.included-list {
+  font-family: 'Roboto',sans-serif;
+  margin: 1rem -1.5rem 20px -1.5rem;
+}
+::marker {
+  color: #5C8212;
+}
+
 .quotes {
   margin-bottom: 1.8rem;
   margin-top: 1.8rem;
@@ -163,9 +197,8 @@ h3 {
   margin: 0px 0px 10px 0px;
 }
 
-
 article {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -173,16 +206,29 @@ article {
 .op-name {
   color: #224229;
   font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.op-price {
+  color: #5C8212;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .pic-grid {
   display: grid;
   grid-template-columns: 2fr 2fr;
-  gap: 1.5rem;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 20px;
 }
 
 footer {
   text-align: center;
+  background-color: #B69276;
+  font-family: 'Playfair Display', serif;
 }
 
 
