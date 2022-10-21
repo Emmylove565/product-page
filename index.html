@@ -8,9 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- Do not change html markup in header. -->
   <header class="wrapper">
     <h1><img src="images/bloomscape-logo.svg" alt="Bloomscape logo" class="logo"></h1>
     <nav>
@@ -22,19 +22,18 @@
     </nav>
   </header>
 
-
-
-  <!-- Add content for your product page using provided text in content.txt -->
   <main role="main" class="wrapper">
 
     <section class="product">
-      <div class="main-plant">
-        <img src="images/money-tree-wooden-plant-stand.jpeg"/>
-      </div>
-      <div class="main-detail">
-        <img src="images/money-tree-detailed.jpeg" alt="Money Tree Leaves"/>
-        <img src="images/money-tree-alt-detailed.jpeg" alt=""/>
-        <img src="images/money-tree-plant-size.png" alt=""/>
+      <div class="main-pics">
+        <div class="main-plant">
+          <img src="images/money-tree-wooden-plant-stand.jpeg"/>
+        </div>
+        <div class="main-detail">
+          <img src="images/money-tree-detailed.jpeg" alt="Money Tree Leaves"/>
+          <img src="images/money-tree-alt-detailed.jpeg" alt=""/>
+          <img src="images/money-tree-plant-size.png" alt=""/>
+        </div>
       </div>
       <div class="purchase">
         <h2>Money Tree</h2>
@@ -63,53 +62,58 @@
         </div>
     </section>
 
-    <section class="details-care">
-      <div class="">
-        <hr></hr>
-        <h3>Details & Care</h3>
-        <hr></hr>
-        <div class="details-p">
-          <p><strong>Size:</strong> XL - 32”-40” tall (including recycled plastic Ecopot)</p>
-          <p><strong>Difficulty:</strong> No-fuss - Carefree</p>
-          <p><strong>Light:</strong> Low to Bright Indirect</p>
-          <p><strong>Pet friendly:</strong> Yes - Non-toxic and pet-friendly</p>
-          <p><strong>Air Cleaner:</strong> Yes - Releases oxygen and absorbs pollutants</p>
+    <div class="details-included">
+      <section class="details-care">
+        <div class="">
+          <hr></hr>
+          <h3>Details & Care</h3>
+          <hr></hr>
+          <div class="details-p">
+            <p><strong>Size:</strong> XL - 32”-40” tall (including recycled plastic Ecopot)</p>
+            <p><strong>Difficulty:</strong> No-fuss - Carefree</p>
+            <p><strong>Light:</strong> Low to Bright Indirect</p>
+            <p><strong>Pet friendly:</strong> Yes - Non-toxic and pet-friendly</p>
+            <p><strong>Air Cleaner:</strong> Yes - Releases oxygen and absorbs pollutants</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="included">
-      <div>
-        <hr></hr>
-        <h3>What’s Included</h3>
-        <hr></hr>
-        <ul class="included-list">
-          <li>Healthy plant pre-potted with premium soil</li>
-          <li>Ecopots pot and saucer</li>
-          <li>All the tips and tricks for expert-level care</li>
-        </ul>
-      </div>
-    </section>
+      <section class="included">
+        <div>
+          <hr></hr>
+          <h3>What’s Included</h3>
+          <hr></hr>
+          <ul class="included-list">
+            <li>Healthy plant pre-potted with premium soil</li>
+            <li>Ecopots pot and saucer</li>
+            <li>All the tips and tricks for expert-level care</li>
+          </ul>
+        </div>
+      </section>
 
-    <section class="reviews">
-      <div>
-        <hr></hr>
-        <h3>What people are saying</h3>
-        <hr></hr>
-        <div class="quotes">
-          <p>"This is the best plant store I have ever ordered from! My plants were shipped/delivered so fast. When I had a question, Bloomscape got back to me right away, and they were so friendly!"</q>
-          <p>- Jess J.</p>
+
+      <section class="reviews">
+        <div>
+          <hr></hr>
+          <h3>What people are saying</h3>
+          <hr></hr>
+          <div class="quotes-group">
+            <div class="quotes">
+              <p>"This is the best plant store I have ever ordered from! My plants were shipped/delivered so fast. When I had a question, Bloomscape got back to me right away, and they were so friendly!"</q>
+              <p class="quote-names">- Jess J.</p>
+            </div>
+            <div class="quotes">
+              <p>"The plants are in such great shape when they arrive, the pots are beautiful, and the variety is fantastic."</p>
+              <p class="quote-names">- Meghan K.</p>
+            </div>
+            <div class="quotes">
+              <p>"I knew nothing about plants, and was able to feel confident about caring for them. I haven’t killed one yet, thanks to help from your care guides and Plant Mom!"</p>
+              <p class="quote-names">- Kayla B.</p>
+            </div>
+          </div>
         </div>
-        <div class="quotes">
-          <p>"The plants are in such great shape when they arrive, the pots are beautiful, and the variety is fantastic."</p>
-          <p>- Meghan K.</p>
-        </div>
-        <div class="quotes">
-          <p>"I knew nothing about plants, and was able to feel confident about caring for them. I haven’t killed one yet, thanks to help from your care guides and Plant Mom!"</p>
-          <p>- Kayla B.</p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <section class="browsed">
       <hr></hr>
@@ -150,9 +154,6 @@
       </div>
   </main>
 
-
-
-  <!-- Do not change html markup in footer. -->
   <footer class="wrapper">
     <strong>© 2022 Bloomscape</strong>
   </footer>

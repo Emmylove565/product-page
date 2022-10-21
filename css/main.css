@@ -8,13 +8,14 @@ html {
 
 html {
   font-size: 100%;
-  background-color: #8B947A;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
-  line-height: 21pt;
-  background-color: #FFF8EF;
+  line-height: 1.5rem;
+  background-color: #8B947A;
 }
 
 img {
@@ -22,20 +23,18 @@ img {
 }
 
 .logo{
-  width: 80%;
-  height: 80%;
+  width: 180px;
+  text-align: left;
 }
 
 h1 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0;
 }
-
 
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 .5rem;
 }
 
 header {
@@ -43,38 +42,33 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #B69276;
-  height: 60px;
-}
-
-nav {
-  background-color: #B69276;
-  padding: 0 1rem 0 1rem;
 }
 
 header nav ul {
   list-style-type: none;
   display: flex;
   gap: 1rem;
-  margin-bottom: -15px;
-  margin-top: 0px;
+  align-items: center;
 }
 
 header nav ul li a {
   color: #000;
   font-weight: bold;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 16px;
   font-family: 'Playfair Display', serif;
-  line-height: 1rem;
 }
 
 header nav ul li a:hover,
 header nav ul li a:focus {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #3B530B;
 }
 
 main {
-  padding: 0 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #FFF8EF;
+  margin-top: 1.5rem;
 }
 
 h2 {
@@ -83,6 +77,21 @@ h2 {
   color: #6B370E;
   font-size: 36px;
   margin-bottom: 0px;
+  margin-top: 1rem;
+}
+
+.main-plant {
+  padding-top: 1rem;
+}
+
+.purchase {
+  margin: 10px 0px 45px 0px;
+}
+
+.purchase-des {
+  margin-top: 0px;
+  margin-bottom: 35px;
+  line-height: 1.5rem;
 }
 
 .button {
@@ -102,20 +111,6 @@ h2 {
   border: 18px solid #8B947A;
   border-radius: .5rem;
   text-decoration: none;
-}
-
-.main-plant {
-  margin-top: 10px;
-}
-
-.purchase {
-  margin: 10px 0px 45px 0px;
-}
-
-.purchase-des {
-  margin-top: 0px;
-  margin-bottom: 35px;
-  line-height: 1.5rem;
 }
 
 p {
@@ -177,24 +172,33 @@ h4 {
 
 .details-p {
   margin: 1rem 0rem 20px 0rem;
+  padding-right: 3rem;
 }
 
 .included-list {
   font-family: 'Roboto',sans-serif;
   margin: 1rem -1.5rem 20px -1.5rem;
 }
+
 ::marker {
   color: #5C8212;
 }
 
+.quotes-group {
+  margin-top: 1rem;
+}
+
 .quotes {
-  margin-bottom: 1.8rem;
-  margin-top: 1.8rem;
+  margin-bottom: 1.5rem;
 }
 
 .quotes p {
   line-height: 1.5rem;
-  margin: 0px 0px 10px 0px;
+  margin-bottom: .5rem;
+}
+
+.quote-names {
+  color: #5C8212;
 }
 
 article {
@@ -222,21 +226,71 @@ article {
   grid-template-columns: 2fr 2fr;
   gap: 1rem;
   margin-top: 1rem;
-  margin-bottom: 20px;
 }
 
 footer {
   text-align: center;
   background-color: #B69276;
   font-family: 'Playfair Display', serif;
+  line-height: 50px;
+  align-items: center;
 }
 
+@media only screen and (min-width: 768px) {
 
-/* Default styling for all screens ends here */
+  .wrapper {
+    padding: 0 1rem 0 1rem;
+  }
 
-/* Add media query for tablet */
+  h1 {
+    margin: 0;
+  }
 
+  header nav ul li a {
+    font-size: 15px;
+  }
 
+  .main-detail {
+    gap: 1rem;
+    margin-top: .5rem;
+  }
 
+  h2 {
+    margin-top: 1.5rem;
+  }
 
-/* Add media query for desktop */
+  .purchase-des {
+    padding-right: 15rem;
+  }
+
+  .des-content {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .quotes-group {
+    padding-right: 15rem;
+  }
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+  .details-included {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+  }
+
+  .quotes-group {
+    padding: 0px;
+  }
+
+  .pic-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+}
